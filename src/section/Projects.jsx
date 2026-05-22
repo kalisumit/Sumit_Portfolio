@@ -21,12 +21,20 @@ const projects = [
         github: "#"
     },
     {
-        title:"Styclo",
+        title:"Styclo (Internship Project)",
         description: "an e-commerce platform that allows users to browse and purchase apparel, cloths, and accessories online..",
         image:"/projects/image4.png",
         tags: ["React","TailwindCSS"],
-        // link: "#",
+        link: "https://styclo-web-ten.vercel.app/",
         github: "https://github.com/kalisumit/Styclo-web"
+    },
+    {
+        title:"MedCapSky (Internship Project)",
+        description: "Developed a responsive healthcare-focused web application during my internship, building modern UI components and improving user experience using React.js and TailwindCSS.",
+        image:"/projects/image5.png",
+        tags: ["React","TailwindCSS"],
+        link: "https://med-cap-sky.vercel.app/",
+        github: "https://github.com/kalisumit/MedCapSky"
     },
     {
         title:"Face Recognition Security System",
