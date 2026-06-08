@@ -5,6 +5,14 @@ import { Button } from "../components/Button";
 
 const projects = [
     {
+        title:"Social Graph",
+        description: "Social Graph is a full-stack web application that visualizes user relationships through an interactive graph interface. It enables user management, friendship connections, hobby-based recommendations, and real-time social network visualization using React, Node.js, and MongoDB.",
+        image: "/projects/image6.png", 
+        tags: ["React", "Tailwind CSS","React Flow", "Node.j", "Express.js", "MongoDB Atlas", "Mongoose", "Axios"],
+        link: "https://social-grapg.vercel.app/",
+        github: "https://github.com/kalisumit/social-grapg"
+    },
+    {
         title:"Samvidhan Seekho",
         description: "React.js-based educational platform focused on constitutional awareness. Implemented reusable frontend structures and multiple responsive UI sections using React Hooks and componentbased architecture",
         image:"/projects/image2.png",
@@ -22,7 +30,7 @@ const projects = [
     },
     {
         title:"Styclo (Internship Project)",
-        description: "an e-commerce platform that allows users to browse and purchase apparel, cloths, and accessories online..",
+        description: "An e-commerce platform that allows users to browse and purchase apparel, cloths, and accessories online..",
         image:"/projects/image4.png",
         tags: ["React","TailwindCSS"],
         link: "https://styclo-web-ten.vercel.app/",
@@ -91,7 +99,14 @@ const Projects = () => {
                                     {project.tags.map((tag,idx)=>(
                                         <span key={idx} className=" flex items-center px-4 py-1.5 rounded-full bg-surface text-xs font-medium border border-border/50 text-muted-foreground hover:border-primary/50 hover:text-primary transition-all duration-300">{tag}</span>
                                     ))}
-                                {project.link ? <a href={project.link} target="blank"><Button size="sm">Live Demo<ArrowUpRight /></Button></a> : <a target="blank" href={project.github} className="p-3 rounded-full glass hover:gb-primary hover:text-primary-foreground transition-all"><GrGithub className="w-5 h-5" /></a>}
+                                <a target="blank" href={project.github} className="p-3 rounded-full glass hover:gb-primary hover:text-primary-foreground transition-all">
+                                    <GrGithub className="w-5 h-5" />
+                                </a>
+                                {project.link && <a href={project.link} target="blank">
+                                    <Button size="sm">
+                                    LINK<ArrowUpRight />
+                                    </Button>
+                                </a> }
                                 
                                 </div>
                         </div>

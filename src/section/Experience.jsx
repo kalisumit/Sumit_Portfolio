@@ -9,7 +9,7 @@ const experiences = [
         current: true,
     },
     {
-        period: "May 2025 - Jul 2025",
+        period: "June 2025 - Aug 2025",
         role: "Frontend Developer Intern",
         company: "MedCapSky Pvt. Ltd.",
         description:
