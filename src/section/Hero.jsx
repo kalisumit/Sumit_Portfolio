@@ -18,6 +18,34 @@ import { SiLeetcode } from "react-icons/si";
 
 const skills =[{tech:"React.Js", icon:react}, {tech:"Next.Js", icon:next}, {tech:"Node.js", icon:node}, {tech:"MongoDB", icon:database}, {tech:"TailwindCSS", icon:tailwind}, {tech:"Git", icon:git},{tech:"HTML", icon:html},{tech:"JavaScript", icon:js},{tech:"Express.Js", icon:express}]
 
+const Technology = [
+    {
+        Frontend: {
+            "React.js": {icon: react},
+            "Next.js": {icon: next},
+            "Tailwind": {icon: tailwind},
+            "HTML": {icon: html},
+        },
+    },
+    {
+        Backend:{
+            "JavaScript": { icon: js },
+            "Node.js":{icon: node },
+            "Express.Js":{icon: express },
+        }
+    },
+    { 
+        Database: {
+            "MongoDB":{icon: database }
+        }
+    },
+
+    { Tools: {
+        "Git": {icon: git },
+        },
+    }
+]
+
 const Hero = () => {
     return <section className="relative min-h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0">
@@ -108,7 +136,7 @@ const Hero = () => {
             </div>
 
             {/* Skills Section  */}
-            <div className="mt-20 animate-fade-in animation-delay-600">
+            <div className="hidden md:block mt-20 animate-fade-in animation-delay-600">
                 <p className="text-sm text-muted-foreground mb-6 text-center">Technology I worked with</p>
                 <div className="relative overflow-hidden">
                     <div className="flex animate-marquee">
@@ -124,10 +152,25 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
+            <div className="md:hidden mt-20 animate-fade-in animation-delay-600">
+                <p className="text-sm text-muted-foreground mb-6 text-center">Technology I worked with</p>
+                <div className="">
+                    <div className="grid grid-cols-2">
+                        {[...skills].map((skill,idx)=>(
+                            <div key={idx} className=" px-8 py-4 ">
+                                <div className="text-sm flex flex-col px-5 gap-5 items-center font-semibold hover:text-muted-foreground transition-colors">
+                                        <img className="h-18 w-18" src={skill.icon}/>
+                                    {skill.tech}
+                                </div>    
+                            </div>
+                        ))}    
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-fade-in animation-delay-800">
-        <a href="#about" className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary">
+        <a href="#about" className="hidden md:block sm:flex flex-col items-center gap-2 text-muted-foreground hover:text-primary">
             <span className="text-xs uppercase tracking-wider">Scroll</span>
             <ChevronDown className="w-6 h-6 animate-bounce"/>
         </a></div>
