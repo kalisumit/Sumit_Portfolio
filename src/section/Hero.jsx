@@ -3,9 +3,20 @@ import { Button } from "../components/Button";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 import { GrGithub } from "react-icons/gr";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
+import html from "../../public/projects/html.svg"
+import css from "../../public/projects/css.svg"
+import js from "../../public/projects/js.svg"
+import node from "../../public/projects/node.svg"
+import react from "../../public/projects/react.svg"
+import database from "../../public/projects/database.svg"
+import express from "../../public/projects/Express.svg"
+import tailwind from "../../public/projects/tailwind.svg"
 // import resume from "public/resume.pdf"
+import next from "../../public/projects/nextjs.svg"
+import git from "../../public/projects/git.svg"
+import { SiLeetcode } from "react-icons/si";
 
-const skills =["React.Js", "Next.Js", "Node.js", "MongoDB", "TailwindCSS", "Git","HTML","JavaScript","Express.Js"]
+const skills =[{tech:"React.Js", icon:react}, {tech:"Next.Js", icon:next}, {tech:"Node.js", icon:node}, {tech:"MongoDB", icon:database}, {tech:"TailwindCSS", icon:tailwind}, {tech:"Git", icon:git},{tech:"HTML", icon:html},{tech:"JavaScript", icon:js},{tech:"Express.Js", icon:express}]
 
 const Hero = () => {
     return <section className="relative min-h-screen flex items-center overflow-hidden">
@@ -62,7 +73,8 @@ const Hero = () => {
                         {[{
                             icon: GrGithub, href: "https://github.com/kalisumit"},
                             { icon: FaLinkedin, href:"https://linkedin.com/in/sumit-kumar-297227268"},
-                            {icon: FaTwitter, href:"https://x.com/Sumit_kumar8130"}
+                            {icon: FaTwitter, href:"https://x.com/Sumit_kumar8130"},
+                            { icon: SiLeetcode, href:"https://leetcode.com/u/k_sumit8130/"}
                         ].map((social,index)=>(
                             <a key={index} href={social.href} className="p-2 rounded-full glass hover:bg-primary/10 hover:text-primary transition-all duration-300"  >
                                 {<social.icon className="w-5 h-5"/>}
@@ -101,8 +113,12 @@ const Hero = () => {
                 <div className="relative overflow-hidden">
                     <div className="flex animate-marquee">
                         {[...skills, ...skills].map((skill,idx)=>(
-                            <div key={idx} className="shrink-0 px-8 py-4">
-                                <span className="text-xl font-semibold text-muted-foreground/50 hover:text-muted-foreground transition-colors">{skill}</span>    
+                            <div key={idx} className="shrink-0 px-8 py-4 ">
+                                <div className="text-xl flex flex-col px-5 gap-5 items-center font-semibold hover:text-muted-foreground transition-colors">
+                                    
+                                        <img className="h-15 w-15" src={skill.icon}/>
+                                    {skill.tech}
+                                </div>    
                             </div>
                         ))}    
                     </div>

@@ -10,7 +10,7 @@ const experiences = [
     },
     {
         period: "June 2025 - Aug 2025",
-        role: "Frontend Developer Intern",
+        role: "Software Developer Intern",
         company: "MedCapSky Pvt. Ltd.",
         description:
             "Worked on React.js-based healthcare applications by developing reusable UI components, improving responsiveness, fixing frontend issues, and collaborating with the development team using Git and GitHub workflows.",
@@ -19,15 +19,15 @@ const experiences = [
     },
 
 
-    {
-        period: "2025",
-        role: "Finance Dashboard",
-        company: "Personal Project",
-        description:
-            "Built a Finance Dashboard application with interactive UI components, data visualization, filtering systems, and responsive layouts focused on improving user experience and frontend scalability.",
-        technologies: ["React.js", "TailwindCSS", "JavaScript","Chart.js"],
-        current: false,
-    },
+    // {
+    //     period: "2025",
+    //     role: "Finance Dashboard",
+    //     company: "Personal Project",
+    //     description:
+    //         "Built a Finance Dashboard application with interactive UI components, data visualization, filtering systems, and responsive layouts focused on improving user experience and frontend scalability.",
+    //     technologies: ["React.js", "TailwindCSS", "JavaScript","Chart.js"],
+    //     current: false,
+    // },
 ];
 
 const Experience = () => {
