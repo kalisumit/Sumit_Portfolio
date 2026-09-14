@@ -1,4 +1,4 @@
-import { AppleIcon, ArrowRight, ChevronDown, Download, GitCommit, X } from "lucide-react";
+import { ArrowRight, ChevronDown, Download} from "lucide-react";
 import { Button } from "../components/Button";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 import { GrGithub } from "react-icons/gr";
