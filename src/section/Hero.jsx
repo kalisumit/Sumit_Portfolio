@@ -13,7 +13,7 @@ const express = "/projects/Express.svg";
 const tailwind = "/projects/tailwind.svg";
 const next = "/projects/nextjs.svg";
 const git = "/projects/git.svg";
-const java = "/projects/Java.svg";
+const java = "/projects/java.svg";
 import { SiLeetcode } from "react-icons/si";
 
 
