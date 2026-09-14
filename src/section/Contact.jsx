@@ -19,7 +19,7 @@ const contactInfo = [
     {
         icon: MapPin,
         label: "Location",
-        value: "Faridabad, Haryana",
+        value: "Bangaluru, Karnataka",
         href: "#",
     },
 ]

@@ -5,10 +5,18 @@ import { Button } from "../components/Button";
 
 const projects = [
     {
+        title:"Labour Ledger",
+        description: "Workforce management application for employee management, attendance tracking, and salary processing. Implemented authentication workflows (signup/login) with JWT-based authorization.",
+        image: "/projects/image7.png", 
+        tags: ["React", "Tailwind CSS", "Node.j", "Express.js", "Mongoose", "Axios", "JWT"],
+        link: "https://labourledger.vercel.app/",
+        github: "https://github.com/kalisumit/Labour-Ledger"
+    },
+    {
         title:"Social Graph",
-        description: "Social Graph is a full-stack web application that visualizes user relationships through an interactive graph interface. It enables user management, friendship connections, hobby-based recommendations, and real-time social network visualization using React, Node.js, and MongoDB.",
+        description: "Social Graph is a web application that visualizes user relationships through an interactive graph interface. It enables user management, friendship connections, hobby-based recommendations, and real-time social network visualization.",
         image: "/projects/image6.png", 
-        tags: ["React", "Tailwind CSS","React Flow", "Node.j", "Express.js", "MongoDB Atlas", "Mongoose", "Axios"],
+        tags: ["React", "Tailwind CSS","React Flow", "Node.j", "Express.js", "Mongoose", "Axios"],
         link: "https://social-grapg.vercel.app/",
         github: "https://github.com/kalisumit/social-grapg"
     },

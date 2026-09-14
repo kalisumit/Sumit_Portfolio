@@ -14,9 +14,11 @@ import tailwind from "../../public/projects/tailwind.svg"
 // import resume from "public/resume.pdf"
 import next from "../../public/projects/nextjs.svg"
 import git from "../../public/projects/git.svg"
+import java from "../../public/projects/java.svg"
 import { SiLeetcode } from "react-icons/si";
 
-const skills =[{tech:"React.Js", icon:react}, {tech:"Next.Js", icon:next}, {tech:"Node.js", icon:node}, {tech:"MongoDB", icon:database}, {tech:"TailwindCSS", icon:tailwind}, {tech:"Git", icon:git},{tech:"HTML", icon:html},{tech:"JavaScript", icon:js},{tech:"Express.Js", icon:express}]
+
+const skills = [{ tech: "Java", icon: java },{tech:"React.Js", icon:react}, {tech:"Next.Js", icon:next}, {tech:"Node.js", icon:node}, {tech:"MongoDB", icon:database}, {tech:"TailwindCSS", icon:tailwind}, {tech:"Git", icon:git},{tech:"HTML", icon:html},{tech:"JavaScript", icon:js},{tech:"Express.Js", icon:express}]
 
 const Technology = [
     {
@@ -116,12 +118,19 @@ const Hero = () => {
                     <div className="relative max-w-md mx-auto">
                         <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-primary/30 via-transparent to-primary/10 blur-2xl animate-pulse"/>
                         <div className="relative glass rounded-3xl p-2 glow-border">
-                            <img src="/profile-photo.png" alt=" Sumit Kumar" className="w-full aspect-4/5 object-cover rounded-2xl"/>
+                            <img src="/profile-photo3.png" alt=" Sumit Kumar" className="w-full aspect-4/5 object-cover rounded-2xl"/>
                             {/* Floating Badge  */}
                             <div className="absolute -bottom-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
                                 <div className="flex items-center gap-3">
                                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"/>
                                         <span className="text-sm font-medium">Available for Work</span> 
+                                </div>
+                            </div>
+                            <div className="absolute -top-4 -right-4 glass rounded-xl px-4 py-3 animate-float">
+                                <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
+                                    {/* <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"/> */}
+                                    <div className="text-2xl font-bold text-primary">100+</div>
+                                        <span className="text-sm font-medium">LeetCode</span> 
                                 </div>
                             </div>
                             {/* Stats Badge  */}
