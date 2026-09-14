@@ -3,18 +3,17 @@ import { Button } from "../components/Button";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 import { GrGithub } from "react-icons/gr";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
-import html from "../../public/projects/html.svg"
-import css from "../../public/projects/css.svg"
-import js from "../../public/projects/js.svg"
-import node from "../../public/projects/node.svg"
-import react from "../../public/projects/react.svg"
-import database from "../../public/projects/database.svg"
-import express from "../../public/projects/Express.svg"
-import tailwind from "../../public/projects/tailwind.svg"
-// import resume from "public/resume.pdf"
-import next from "../..//projects/nextjs.svg"
-import git from "../..//projects/git.svg"
-import java from "../..//projects/Java.svg"
+const html = "/projects/html.svg";
+const css = "/projects/css.svg";
+const js = "/projects/js.svg";
+const node = "/projects/node.svg";
+const react = "/projects/react.svg";
+const database = "/projects/database.svg";
+const express = "/projects/Express.svg";
+const tailwind = "/projects/tailwind.svg";
+const next = "/projects/nextjs.svg";
+const git = "/projects/git.svg";
+const java = "/projects/Java.svg";
 import { SiLeetcode } from "react-icons/si";
 
 
