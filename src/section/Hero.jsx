@@ -3,18 +3,18 @@ import { Button } from "../components/Button";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 import { GrGithub } from "react-icons/gr";
 import { FaLinkedin, FaTwitter } from "react-icons/fa";
-import html from "/projects/html.svg"
-import css from "/projects/css.svg"
-import js from "/projects/js.svg"
-import node from "/projects/node.svg"
-import react from "/projects/react.svg"
-import database from "/projects/database.svg"
-import express from "/projects/Express.svg"
-import tailwind from "/projects/tailwind.svg"
+import html from "../../public/projects/html.svg"
+import css from "../../public/projects/css.svg"
+import js from "../../public/projects/js.svg"
+import node from "../../public/projects/node.svg"
+import react from "../../public/projects/react.svg"
+import database from "../../public/projects/database.svg"
+import express from "../../public/projects/Express.svg"
+import tailwind from "../../public/projects/tailwind.svg"
 // import resume from "public/resume.pdf"
-import next from "/projects/nextjs.svg"
-import git from "/projects/git.svg"
-import java from "/projects/Java.svg"
+import next from "../..//projects/nextjs.svg"
+import git from "../..//projects/git.svg"
+import java from "../..//projects/Java.svg"
 import { SiLeetcode } from "react-icons/si";
 
 
